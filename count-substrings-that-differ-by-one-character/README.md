@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/0/2021 at 20:26)](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/discuss/1030176/JavaScript-Brute-Force-Code)  
 <h2>1638. Count Substrings That Differ by One Character</h2><h3>Medium</h3><hr><div><p>Given two strings <code>s</code> and <code>t</code>, find the number of ways you can choose a non-empty substring of <code>s</code> and replace a <strong>single character</strong> by a different character such that the resulting substring is a substring of <code>t</code>. In other words, find the number of substrings in <code>s</code> that differ from some substring in <code>t</code> by <strong>exactly</strong> one character.</p>
 
 <p>For example, the underlined substrings in <code>"<u>compute</u>r"</code> and <code>"<u>computa</u>tion"</code> only differ by the <code>'e'</code>/<code>'a'</code>, so this is a valid way.</p>
