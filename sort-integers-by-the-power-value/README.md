@@ -1,3 +1,4 @@
+[Discussion Post (created on 23/0/2021 at 0:14)](https://leetcode.com/problems/sort-integers-by-the-power-value/discuss/1030389/JavaScript-Easy-Solution)  
 <h2>1387. Sort Integers by The Power Value</h2><h3>Medium</h3><hr><div><p>The power of an integer <code>x</code> is defined as the number of steps needed to transform&nbsp;<code>x</code> into <code>1</code> using the following steps:</p>
 
 <ul>
