@@ -1,3 +1,4 @@
+[Discussion Post (created on 28/0/2021 at 20:29)](https://leetcode.com/problems/find-and-replace-in-string/discuss/1039748/JavaScript-Solution)  
 <h2>833. Find And Replace in String</h2><h3>Medium</h3><hr><div><p>To some string <code>S</code>, we will perform some&nbsp;replacement&nbsp;operations that replace groups of letters with new ones (not necessarily the same size).</p>
 
 <p>Each replacement operation has <code>3</code> parameters: a starting index <code>i</code>, a source word&nbsp;<code>x</code>&nbsp;and a target word&nbsp;<code>y</code>.&nbsp; The rule is that if <code><font face="monospace">x</font></code>&nbsp;starts at position <code>i</code>&nbsp;in the <strong>original</strong> <strong>string</strong> <strong><code>S</code></strong>, then we will replace that occurrence of&nbsp;<code>x</code>&nbsp;with&nbsp;<code>y</code>.&nbsp; If not, we do nothing.</p>
