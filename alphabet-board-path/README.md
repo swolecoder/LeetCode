@@ -1,3 +1,4 @@
+[Discussion Post (created on 28/0/2021 at 21:34)](https://leetcode.com/problems/alphabet-board-path/discuss/1039802/Leetcode-in-JavaScript)  
 <h2>1138. Alphabet Board Path</h2><h3>Medium</h3><hr><div><p>On an alphabet board, we start at position <code>(0, 0)</code>, corresponding to character&nbsp;<code>board[0][0]</code>.</p>
 
 <p>Here, <code>board = ["abcde", "fghij", "klmno", "pqrst", "uvwxy", "z"]</code>, as shown in the diagram below.</p>
