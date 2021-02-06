@@ -1,3 +1,4 @@
+[Discussion Post (created on 6/1/2021 at 14:58)](https://leetcode.com/problems/range-sum-of-bst/discuss/1053017/JavaScript-Video-Solution-%2B-Code)  
 <h2>938. Range Sum of BST</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> node of a binary search tree, return <em>the sum of values of all nodes with a value in the range <code>[low, high]</code></em>.</p>
 
 <p>&nbsp;</p>
