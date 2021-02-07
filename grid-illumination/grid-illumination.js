@@ -5,70 +5,65 @@
  * @return {number[]}
  */
 var gridIllumination = function(N, lamps, queries) {
+    let r = {};
+    let c = {};
+    let d1 = {};
+    let d2 = {};
     
-    let x = {}
-    let y = {};
-    let p = {}
-    let s = {}
     
     let set = new Set();
     
-    for(let [a,b] of lamps){
-        x[a] = (x[a] || 0)+1;
-        y[b]= (y[b] || 0)+1
-        p[a+b]= (p[a+b] || 0)+1
-        s[a-b]= (  s[a-b] || 0)+1
+    for(let [x,y] of lamps){
+        r[x] = (r[x] || 0)+1;
+        c[y]= (c[y] || 0)+1;
         
-        let key = a+"-"+b
+        d1[x+y] = ( d1[x+y] || 0)+1;
+        d2[x-y] =( d2[x-y] || 0)+1;
+        
+        let key = x+"-"+y
         set.add(key)
-    }
+
+        }
     
-    console.log(x,y,p,s,set)
-    let res = [];
-    
-    for(let [a,b] of queries){
-       // console.log("Ashish",a,b)
+    let result = [];
+    for(let [x,y] of queries){
         
-        if(x[a] > 0 || y[b] > 0 || p[a+b] > 0|| s[a-b] >0){
-            res.push(1)
-            //tuen off in all difrections
-             console.log("Ashish",a,b)
-            for(let j= -1; j <=1; j++){
-                for(let k= -1; k <=1; k++){
-                    let x1 = a + j;
-                    let y1 = b + k;
-                    let key = x1+"-"+y1
-                     console.log("Ashish ewwdewd",x1,y1)
-                    if(set.has(key)){
-                        //console.log("Ashish ewwdewd",a,b)
-                        set.delete(key);//delete
-                        x[x1]--;
-                       y[y1]--;
-                        p[x1+y1]--;
-                        s[x1-y1]--
-                        
-                    }
+        if(r[x] > 0 || c[y] > 0 || d1[x+y] > 0 || d2[x-y] > 0){
+            result.push(1);
+            //console.log("I am las")
+            for(let i =-1; i <=1; i++){
+                for(let j= -1; j <= 1; j++){
+                    let x1 = x + i;
+                    let y1 = y +j;
                     
+                    console.log("I am las")
+                    let key = x1+"-"+y1;
+                    if(set.has(key)){
+                        console.log("I am las")
+                        set.delete(key);
+                        r[x1]--;
+                        c[y1]--;
+                        d1[x1+y1]--;
+                        d2[x1-y1]--
+                    }
                 }
             }
             
             
             
-            
         }else{
-            res.push(0)
-        
+            result.push(0)
         }
-        
-        
-        
+         
     }
     
+    return result;
     
     
     
     
-  return res  
+    
+    
     
     
 };
