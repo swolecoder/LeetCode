@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/1/2021 at 10:49)](https://leetcode.com/problems/russian-doll-envelopes/discuss/?currentPage=1&orderBy=newest_to_oldest&query=)  
 <h2>354. Russian Doll Envelopes</h2><h3>Hard</h3><hr><div><p>You have a number of envelopes with widths and heights given as a pair of integers <code>(w, h)</code>. One envelope can fit into another if and only if both the width and height of one envelope is greater than the width and height of the other envelope.</p>
 
 <p>What is the maximum number of envelopes can you Russian doll? (put one inside other)</p>
