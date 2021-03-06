@@ -1,3 +1,4 @@
+[Discussion Post (created on 6/2/2021 at 11:57)](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/discuss/1096466/Video-%2B-Solution-in-JS)  
 <h2>1339. Maximum Product of Splitted Binary Tree</h2><h3>Medium</h3><hr><div><p>Given a binary tree <code>root</code>.&nbsp;Split the binary tree into two subtrees by removing&nbsp;1 edge such that the product of the sums of the subtrees are maximized.</p>
 
 <p>Since the answer&nbsp;may be too large,&nbsp;return it modulo&nbsp;10^9 + 7.</p>
