@@ -11,7 +11,7 @@
  * @return {number}
  */
 
-var mod = Math.pow(10,9) +7
+const mod = Math.pow(10,9) +7
 var maxProduct = function(root) {
     
     
