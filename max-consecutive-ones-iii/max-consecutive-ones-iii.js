@@ -4,25 +4,19 @@
  * @return {number}
  */
 var longestOnes = function(A, K) {
+    let count = 0;
+    let ans = 0;
     let start = 0;
-    let count = 0
-    
-    let max = 0;
-    
-    for(let i=0; i < A.length; i++){
-        if(A[i] == 0)count++;
-        //shring window size
+    for(i =0; i < A.length; i++){
+        if(A[i]== 0)count++
+        
         while(count > K){
-            
-            if(A[start] == 0)count--
-            
+            if(A[start]== 0)count--
             start++
         }
         
-        
-        
-        max = Math.max(max, i -start+1)
+        ans = Math.max(ans, i -start+1)
     }
     
-    return max
+    return ans
 };
