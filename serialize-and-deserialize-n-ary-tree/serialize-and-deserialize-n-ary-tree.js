@@ -23,23 +23,22 @@ class Codec {
         
         function dfs(node){
             if(!node){
-                // ans.push(node.val)
                 return
             }
             
             ans.push(node.val)
-            if(node.children){
+            if(node.children.length){
                 ans.push(node.children.length)
                 for(let i =0; i < node.children.length; i++){
                     dfs(node.children[i])
                 }
             }else{
-                ans.push("#")
+                ans.push("0")
             }
         }
         dfs(root)
         
-        console.log(ans)
+        console.log("ashish",ans)
         
         return ans.join(",")
     };
@@ -55,11 +54,10 @@ class Codec {
         
         function dfs(node){
             if(!node.length)return;
-            
-            
+      
             let val = node[index];
             index++;
-            if(val == "#")return null;
+            // if(val == "$")return null;
             
             let tree = new Node(val, []);
             let size = node[index];
