@@ -1,3 +1,4 @@
+[Discussion Post (created on 31/2/2021 at 8:18)](https://leetcode.com/problems/word-ladder/submissions/)  
 <h2>127. Word Ladder</h2><h3>Hard</h3><hr><div><p>A <strong>transformation sequence</strong> from word <code>beginWord</code> to word <code>endWord</code> using a dictionary <code>wordList</code> is a sequence of words such that:</p>
 
 <ul>
