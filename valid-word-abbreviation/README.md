@@ -24,8 +24,10 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= word.length, abbr.length &lt;= 20</code></li>
+	<li><code>1 &lt;= word.length &lt;= 20</code></li>
 	<li><code>word</code> consists of only lowercase English letters.</li>
+	<li><code>1 &lt;= abrr.length &lt;= 10</code></li>
 	<li><code>abbr</code> consists of lowercase English letters and digits.</li>
+	<li>All the integers in <code>abrr</code> will fit in a 32-bit integer.</li>
 </ul>
 </div>
