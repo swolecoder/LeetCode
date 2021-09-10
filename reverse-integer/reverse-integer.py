@@ -1,24 +1,19 @@
 class Solution:
     def reverse(self, x: int) -> int:
         
-        data = abs(x)
+        sum = 0
+        sign = 1
         
-        list_of_digits = [ int(i) for i in str(data)]
+        if x < 0 :
+            x = x * -1
+            sign = sign * -1
         
-        reverse = list_of_digits[::-1]
         
-        # print(''.join(map(str,reverse)))
-        
-        ans = int(''.join(map(str,reverse)))
-        print(ans)
-        
-        if ans < 2 ** 31 -1 and ans > - 2 **31:
+        while x > 0:
+            rem = x % 10
+            sum = sum * 10 + rem
+            x = x //10
             
-            if x > 0:
-                return ans
-            else:
-                return ans * -1
         
-        else:
-            return 0
+        return (sum*sign if (sum < 2**31 - 1 and sum > -2**31) else 0)
         
